@@ -1,0 +1,64 @@
+cd /home/user/Git
+
+mkdir First_Repo
+cd First_Repo/
+
+git init 
+
+cp /mnt/usb/Scripts/WiFi-Direct/wifi_direct.sh .
+git status
+git add *
+
+git status
+git commit -m "My First Commit"
+git status
+
+git log
+
+git remote add origin https://github.com/RamexKumar/First_Repo.git
+git push -u origin master
+
+================================================================================
+
+cd /home/user/Git
+git clone https://github.com/pradeeprathod/Collaborate.git
+
+git pull
+
+vi myfile.txt
+
+git add *
+git commit -m "My Changes"
+git status
+
+git remote add origin https://github.com/pradeeprathod/Collaborate.git
+git push -u origin master
+
+
+================================================================================
+
+cd /home/user/Git
+
+mkdir Branch_Magic
+cd Branch_Magic/
+git init
+vi master1.txt
+vi master2.txt
+git add .
+git status
+
+git commit -m "Master Branch"
+
+git branch Mumbai-Branch
+git checkout Mumbai-Branch 
+vi mumbai1.txt
+vi mumbai2.txt
+git add .
+git status
+git commit -m "Mumbai Files"
+
+git checkout master 
+git status
+
+git merge Mumbai-Branch
+
